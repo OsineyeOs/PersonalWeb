@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oluwaseun Osineye - Career Timeline">
+    <title>Career | Oluwaseun Osineye</title>
+    <link rel="stylesheet" href="career.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="career.html" class="active">Career</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="career-timeline">
+            <h1>My Career Journey</h1>
+            <div class="timeline">
+                <div class="timeline-item" data-year="2022">
+                    <div class="timeline-content">
+                        <h2>Chief Operating Officer - Choplife Republic</h2>
+                        <p>Led operations, strategy, and product development.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2021">
+                    <div class="timeline-content">
+                        <h2>Quantity Surveyor - Alaro City</h2>
+                        <p>Managed large-scale urban development projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Oluwaseun Osineye | All Rights Reserved</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

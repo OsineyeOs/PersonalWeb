@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Oluwaseun Osineye">
+    <title>Contact | Oluwaseun Osineye</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-form" style="text-align: center;">
+        <h1>Let's Connect</h1>
+        <p>Interested in working together? Fill out the form below, and I'll get back to you!</p>
+
+        <form action="submit_form.php" method="POST" style="text-align: center;">
+            <div style="text-align: center;">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div style="text-align: center;">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div style="text-align: center;">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <?php if (isset($_GET["success"])): ?>
+        <div class="success-message" style="text-align: center;">
+            <p>✅ Your message has been sent! I'll get back to you soon.</p>
+        </div>
+        <?php endif; ?>
+    </section>
+
+    <footer style="text-align: center;">
+        <p>© 2025 Oluwaseun Osineye | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
